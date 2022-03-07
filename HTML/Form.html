@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" autofocus placeholder="Enter your name here..." maxlength="50" id="name"><hr/>
+            <input type="radio" id="G1" name="Gender"><label for="G1">Male</label>&nbsp;
+            <input type="radio" id="G2" name="Gender"><label for="G2">Female</label><hr/>
+            <input type="checkbox">Accept Terms & Conditions<hr/>
+            <input type="file" multiple accept=".jpg, .jpeg, .png"><hr/>
+
+            <h2>Different ways to create submit button</h2>
+            <input type="button" value="Submit"><br/><br/> <!-- Submit all values of the form -->
+            <input type="submit"><br/><br/>
+            <button>Submit</button><hr/> <!-- Submit whole web page -->
+
+            <h2>Date</h2>
+            <input type="date"><hr/>
+            <h2>Color</h2>
+            <input type="color"><hr/>
+            <h2>Time</h2>
+            <input type="time"><hr/>
+            <h2>Range</h2>
+            <input type="range"><hr/>
+
+            <h2>Address</h2>
+            <label for="Address">Address</label>
+            <textarea placeholder="Enter address here..." name="Address" id="Address" cols="30" rows="10"></textarea><hr/>
+
+            <h2>Login Form</h2>
+            <fieldset>
+                <legend>Sign In</legend>
+                <label for="username">Username:</label><br/>
+                <input type="text" placeholder="Enter Username..." id="username"><br/>
+                <label for="password">Password:</label><br/>
+                <input type="password" placeholder="Enter Password..." id="password"><br/><br/>
+                <input type="button" value="Sign In">
+            </fieldset><hr/>
+        </form>
+    </body>
+</html>

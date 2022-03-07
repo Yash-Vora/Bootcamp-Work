@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.4-flex-container-item.html</title>
+
+    <style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+      }
+
+      .flex-container {
+          border: 3px solid yellowgreen;
+          display: flex; /* It will apply float:left property to all items inside it and width:100% */
+      }
+
+      .flex-inline-container {
+        border: 3px solid yellowgreen;
+        display: inline-flex; /* It will apply float:left property to all items inside it and width:auto */
+      }
+
+      .flex-direction {
+        border: 3px solid yellowgreen;
+        /*display: flex;*/ /* It will apply float:left property to all items inside it and width:100% */
+        display: inline-flex; /* It will apply float:left property to all items inside it and width:auto */
+
+        /*flex-direction: row;*/  /* left to right */
+        /*flex-direction: row-reverse;*/ /* right to left */
+        /*flex-direction: column;*/ /* top to bottom */
+        flex-direction: column-reverse; /* bottom to left */
+      }
+
+      .flex-wrap {
+        border: 3px solid yellowgreen;
+        /* flex-direction: column; */
+        /* height: 200px; */
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */ /* Wrap overflow to bottom row */
+        flex-wrap: wrap-reverse; /* Wrap overflow to top row */
+      }
+
+      .flex-flow {
+        border: 3px solid yellowgreen;
+        /* flex-direction: column; */
+        /* height: 200px; */
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        
+        flex-flow: row-reverse wrap-reverse;/* Flex Flow is used to combine  flex row and flex wrap*/
+      }
+
+      .flex-justify-content-row {
+        border: 3px solid yellowgreen;
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        
+        /* justify-content: baseline; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* justify-content: space-around; */
+        justify-content: space-between;
+        /* justify-content: space-evenly; */
+      }
+
+      .flex-justify-content-column {
+        border: 3px solid yellowgreen;
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        height: 600px;
+        flex-direction: column;
+        
+        /* justify-content: baseline; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* justify-content: space-around; */
+        justify-content: space-between;
+        /* justify-content: space-evenly; */
+      }
+
+      .flex-align-items-row {
+        border: 3px solid yellowgreen;
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        height: 600px;
+
+        /* align-items: baseline; */
+        align-items: center;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+      }
+
+      .flex-align-items-column {
+        border: 3px solid yellowgreen;
+        display: flex; /* It will apply float:left property to all items inside it and width:100% */
+        /*display: inline-flex;*/ /* It will apply float:left property to all items inside it and width:auto */
+        height: 600px;
+        flex-direction: column;
+
+        /* align-items: baseline; */
+        align-items: center;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+      }
+
+      .flex-align-content-row {
+        border: 3px solid #826a98;
+        
+        display: flex; /* block level flex container */
+        height: 600px;
+        flex-wrap: wrap;
+
+        /* align-content: stretch;  */
+        /* align-content: flex-start; */
+        /*align-content: flex-end; */
+        align-content: center;
+        /* align-content: space-between; */
+        /* align-content: space-around; */
+      }
+
+      .flex-align-content-column {
+        border: 3px solid #826a98;
+        
+        display: flex; /* block level flex container */
+        height: 300px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        /* align-content: stretch; */ /* default value for align-content is stretch */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        /* align-content: space-between; */
+        align-content: space-around;
+      }
+
+      .item {
+        color: #ffffff;
+        font-size: 1rem;
+        padding: 0.75rem;
+        text-align: center;
+      }
+
+      .item-1 {
+        background-color:#DDA0DD;
+      }
+
+      .item-2 {
+        background-color:#BF94E4;
+      }
+
+      .item-3 {
+        background-color:#734F96;
+      }
+
+      .item-4 {
+        background-color:#FBAED2;
+      }
+
+      .item-5 {
+        background-color:#EE82EE;
+      }
+      
+      .item-6 {
+        background-color:#ADE4CA;
+      }
+
+      .item-7 {
+        background-color:#A6D5AE;
+      }
+
+      .item-8 {
+        background-color:#8FBC8E;
+      }
+
+      .item-9 {
+        background-color: #64A466;
+      }
+      
+      .item-10 {
+        background-color:#2E8B56;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Display Flex -->
+    <h2>Display Flex</h2>
+    <div class="flex-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Display Inline Flex -->
+    <h2>Display Inline Flex</h2>
+    <div class="flex-inline-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Direction -->
+    <h2>Flex Direction</h2>
+    <div class="flex-direction">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h2>Flex Wrap</h2>
+    <div class="flex-wrap">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+    
+    <!-- Flex Flow -->
+    <h2>Flex Flow</h2>
+    <div class="flex-flow">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Justify Content Row -->
+    <h2>Flex Justify Content Row</h2>
+    <div class="flex-justify-content-row">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Justify Content Column -->
+    <h2>Flex Justify Content Column</h2>
+    <div class="flex-justify-content-column">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Align Items Row -->
+    <h2>Flex Align Items Row</h2>
+    <div class="flex-align-items-row">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Align Items Column -->
+    <h2>Flex Align Items Column</h2>
+    <div class="flex-align-items-column">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Align Content Row -->
+    <h2>Flex Align Content Row</h2>
+    <div class="flex-align-content-row">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+
+    <!-- Flex Align Content Column -->
+    <h2>Flex Align Content Column</h2>
+    <div class="flex-align-content-column">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <div class="item item-9">item-9</div>
+      <div class="item item-10">item-10</div>
+    </div>
+  </body>
+  
+</html>

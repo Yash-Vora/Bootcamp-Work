@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hover Menu With HTML-CSS</title>
+        <style type="text/css">
+            #HoverMenu li ul li {
+                display: none;
+            }
+            #HoverMenu li:hover ul li {
+                display: block;
+            }
+            #HoverMenu li:hover ul li ul li {
+                display: none;
+            }
+            #HoverMenu li ul li:hover ul li {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Hover/Dynamic Menu With HTML-CSS</h2>
+        <ul id="HoverMenu">
+            <li>Google
+                <ul>
+                    <li>Gmail
+                        <ul>
+                            <li>Sign In</li>
+                            <li>Sign Up</li>
+                        </ul>
+                    </li>
+                    <li>Gdrive</li>
+                    <li>Youtube</li>
+                    <li>Maps</li>
+                </ul>
+            </li>
+            <li>Flipkart
+                <ul>
+                    <li>Search Product</li>
+                    <li>Buy Product</li>
+                    <li>Sell Product</li>
+                </ul>
+            </li>
+            <li>Amazon
+                <ul>
+                    <li>Search Product</li>
+                    <li>Buy Product</li>
+                    <li>Sell Product</li>
+                </ul>
+            </li>
+            <li>Snapdeal</li>
+            <li>LinkedIn
+                <ul>
+                    <li>Posts
+                        <ul>
+                            <li>Add Posts</li>
+                            <li>Delete Posts</li>  
+                        </ul>
+                    </li>
+                    <li>Profile</li>           
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

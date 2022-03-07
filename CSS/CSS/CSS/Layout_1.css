@@ -1,0 +1,60 @@
+* {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.R1 {
+    background-color: gray;
+    width: 98%;
+    padding-left: 2%;
+    height: 40px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.R2, .R5 {
+    width: 100%;
+    height: 27px;
+    padding-top: 3px;
+    background-color: gray;
+    text-align: center;
+}
+
+.R3 {
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    padding-top: 30px;
+    background-color: gray;
+    text-align: center;
+}
+
+.R4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.R4 div {
+    float: left;
+    background-color: gray;
+    text-align: center;
+    padding-top: 180px;
+    height: 220px;
+}
+
+.R4C1 {
+    width: 30%;
+}
+
+.R4C2 {
+    width: 68%;
+    margin-left: 2%;
+}

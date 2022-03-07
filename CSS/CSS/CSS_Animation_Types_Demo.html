@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Types of Animation in CSS</title>
+        <style type="text/css">
+            div {
+                height: 110px;
+                width: 200px;
+                transition: 3s;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                background-color: brown;
+                text-align: center;
+                padding-top: 90px;
+            }
+
+            .translateanim:hover {
+                -webkit-transform: translate(100px,100px);
+                    -moz-transform: translate(100px,100px);
+                     -ms-transform: translate(100px,100px);
+                      -o-transform: translate(100px,100px);
+                       transform: translate(100px,100px);
+                    background-color: blue;
+                    color: black;
+            }
+
+            .rotateanim:hover {
+                -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                     -ms-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                       transform: rotate(360deg);
+                    background-color: blue;
+                    color: black;
+            }
+
+            .rotate3danim:hover {
+                -webkit-transform: rotate3d(1,0,0,360deg);
+                    -moz-transform: rotate3d(1,0,0,360deg);
+                     -ms-transform: rotate3d(1,0,0,360deg);
+                      -o-transform: rotate3d(1,0,0,360deg);
+                       transform: rotate3d(1,0,0,360deg);
+                    background-color: blue;
+                    color: black;
+            }
+
+            .skewanim:hover {
+                -webkit-transform: skew(50deg);
+                    -moz-transform: skew(50deg);
+                     -ms-transform: skew(50deg);
+                      -o-transform: skew(50deg);
+                       transform: skew(50deg);
+                    background-color: blue;
+                    color: black;
+            }
+
+            .scaleanim:hover {
+                -webkit-transform: scale(1,0.5);
+                    -moz-transform: scale(1,0.5);
+                     -ms-transform: scale(1,0.5);
+                      -o-transform: scale(1,0.5);
+                       transform: scale(1,0.5);
+                    background-color: blue;
+                    color: black;
+            }
+
+            .opacityanim:hover {
+                opacity: 0;
+            }
+
+            .RGBA:hover {
+                background: rgba(0, 255, 0, 0.5);
+            }
+
+            .box-shadow:hover {
+                box-shadow: 0px 0px 30px blueviolet;
+            }
+
+            .text-shadow:hover {
+                text-shadow: 3px 3px 3px yellowgreen;
+            }
+
+            .border-radius:hover {
+                border-radius: 30%;
+            }
+
+            .overflow {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Different Types of Animation in CSS</h2>
+        <div class="translateanim">Translate</div><hr/>
+        <div class="rotateanim">Rotate</div><hr/>
+        <div class="rotate3danim">Rotate3D</div><hr/>
+        <div class="skewanim">Skew</div><hr/>
+        <div class="scaleanim">Scale</div><hr/>
+        <div class="opacityanim">Opacity</div><hr/>
+        <div class="RGBA">RGBA</div><hr/>
+        <div class="box-shadow">Box Shadow</div><hr/>
+        <div class="text-shadow">Text Shadow</div><hr/>
+        <div class="border-radius">Border Radius</div><hr/>
+        <div class="overflow">Overflow</div><hr/>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+# Create Database:
+create database sample;
+
+# Use Database:
+use sample;
+
+# Create Table:
+CREATE TABLE employee(
+    e_id int NOT NULL AUTO_INCREMENT,
+    first_name varchar(20),
+    second_name varchar(20),
+    email varchar(50),
+    department varchar(20),
+    PRIMARY KEY(e_id)
+);
+
+# Between Query
+SELECT * FROM employee where salary BETWEEN 20000 and 40000;
+
+# In and Not In Query
+SELECT * FROM student where s_id in (1,2);
+SELECT * FROM student where s_id not in (1,2);
+
+# Like Query
+SELECT f_name from employee where f_name like 'a%';
+SELECT f_name from employee where f_name like '%a';
+SELECT f_name from employee where f_name like '_a%';
+SELECT f_name from employee where f_name like '%a%';
+
+# Insert Query:
+INSERT INTO employee VALUES 
+	("Yash","Vora",'yash.vora@gmail.com','IT'),
+        ("Shubham","Kshartriya",'shubham@gmail.com','IT');
+
+# Update QUery
+UPDATE employee SET second_name = "Gopal" where e_id = 4;
+
+# Delete Query
+DELETE FROM employee WHERE e_id = 5; 
+DELETE FROM employee;
+
+# Truncate Query
+TRUNCATE TABLE employee;
+
+# Drop Table
+DROP TABLE employee;
+DROP DATABASE sample;
+
+# Select Query
+SELECT * FROM employee where e_id = 1 and email = 'yash.vora@gmail.com';
+SELECT * FROM employee where e_id = 1 or email = 'yash.vora@gmaibham@gmail.com';
+
+# Cross join: 
+select *from student cross join subject;
+select Student_Contactno,Subject_name from student cross join subject;
+
+# Inner join:
+
+select * from student inner join subject where Student_id = Subject_id; 
+
+# Natural join:
+select * from student natural join subject; 
+
+# left outer join:
+select * from student s1 left outer join subject s2 ON s1.Student_id=s2.Student_id;
+
+# Right Outer join:
+select * from student s1 right outer join subject ON s1.Student_id=Subject_id;
+
+# full join :
+select * from student s1 full outer join subject s2 ON s1.Student_id=s2.Student_id;
+
+# Group by Query:
+select Student_Fname,Student_Lname from student Group by Student_Gender;
+select * from student group by Student_Gender;
+select Student_id,Student_Fname from student group by Student_Lname;
+select Student_id,Student_Lname, count(*) from student group by Student_Lname;
+
+# Distint Query:
+select DISTINCT Student_Gender from student; 
+
+# Query Having:
+select * from subject Group by Subject_name having (Subject_id < 4);

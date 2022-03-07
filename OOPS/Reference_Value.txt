@@ -1,0 +1,7 @@
+Reference: 
+Class - User define reference type.
+String, object, array + collection & generics of all types are - InBuilt Reference Types.
+
+Value:
+Structure - User define value type.
+Int, float, double, decimal, char, bool - InBuilt Value Types.
