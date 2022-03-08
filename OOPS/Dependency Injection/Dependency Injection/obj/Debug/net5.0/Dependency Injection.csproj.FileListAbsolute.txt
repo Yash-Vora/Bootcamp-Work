@@ -1,0 +1,16 @@
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.exe
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.deps.json
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.runtimeconfig.json
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.runtimeconfig.dev.json
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.dll
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\bin\Debug\net5.0\Dependency Injection.pdb
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.csproj.AssemblyReference.cache
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.AssemblyInfoInputs.cache
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.AssemblyInfo.cs
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.csproj.CoreCompileInputs.cache
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.dll
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\refint\Dependency Injection.dll
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.pdb
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\Dependency Injection.genruntimeconfig.cache
+D:\Bootcamp Practical Work\OOPS Concept\Dependency Injection\Dependency Injection\obj\Debug\net5.0\ref\Dependency Injection.dll

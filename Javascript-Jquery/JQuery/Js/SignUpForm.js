@@ -89,7 +89,11 @@ $(document).ready(function(){
     });
 
     $('#Date').datepicker({
-        dateFormat:'dd-mm-yy'
+        dateFormat:'dd-mm-yy',
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1960:2022",
+        maxDate: "-18y"
     });
 
     // Age Validation
